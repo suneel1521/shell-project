@@ -57,7 +57,7 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 VALIDATE $? "Extract the frontend content"
 
-cp 02-nginx.cof /etc/nginx/nginx.conf
+cp 02-nginx.conf /etc/nginx/nginx.conf
 VALIDATE $? "Create Nginx Reverse Proxy Configuration to reach backend services."
 
 systemctl restart nginx 
